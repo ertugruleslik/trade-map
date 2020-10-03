@@ -1,0 +1,23 @@
+<nav-bar></nav-bar>
+
+<div class="container">
+  <a ui-sref="detay" class="btn back">Geri Dön</a>
+
+  <h1 class="detail-title">{{ vm.continent.name }}</h1>
+
+  <div>
+    <ul class="country-list">
+      <li ng-repeat="country in vm.countries">
+        <div class="country-list-header">
+          <h3>{{country.name}}</h3> <span class="flag">{{country.flag}}</span>
+        </div>
+        <div class="country-list-content">
+          <span ng-show="country.actions == 'export'" class="label label-export">Export</span>
+          <span ng-show="country.actions == 'import'" class="label label-import">Import</span>
+          <span ng-show="country.note" class="label label-note">Note : {{country.note}}</span>
+          <span ng-show="!country.note && !country.actions" class="label label-empty">İşlem Yok</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<nav-bar></nav-bar>
+
+<div class="container">
+    <div class="map">
+        <div class="map-content">
+            <svg-map ng-right-click menu-items="vm.menuItems" config="vm.mapConfig" regions="vm.data.countries"></svg>
+        </div>
+    </div>
+
+    <ul class="continents-list">
+        <li ui-sref-active="active" class="continents-li" ng-repeat="item in vm.data.continents">
+            <a ui-sref="kita({id: '{{ item.url }}' })" class="btn">{{item.name}}</a>
+        </li>
+    </ul>
+
+    <div class="trade-rate">
+        <span class="export-rate label label-export" ng-show="vm.tradeRate().export !== 'NaN'">Export: <strong>{{vm.tradeRate().export}}</strong></span>
+        <span class="export-rate label label-import" ng-show="vm.tradeRate().import !== 'NaN'">Import: <strong>{{vm.tradeRate().import}}</strong></span>
+
+    </div>
+</div>

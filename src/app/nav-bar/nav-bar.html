@@ -1,0 +1,18 @@
+<header>
+    <div class="header-profile">
+        {{ vm.root.user.name }}
+    </div>
+    <div class="header-search">
+        <div class="header-search-box">
+            <input class="search" placeholder="Ara..." ng-model="vm.search" ng-minlength="3" />
+        </div>
+        <div class="header-search-result" ng-show="vm.search" py-auto-close="vm.search">
+            <ul>
+                <li ng-right-click="vm.countrySelect(item.code)" menu-items="vm.menuItems" ng-repeat="item in vm.mapRegions | filter:vm.search">{{item.name}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-right">
+        <a ng-click="vm.logout()" class="btn">Çıkış</a>
+    </div>
+</header>

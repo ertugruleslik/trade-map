@@ -1,0 +1,13 @@
+
+/** -------------------------------------------
+    Project Styles
+    ------------------------------------------- **/
+/**
+ * First Import Settings
+ * These settings are defines simple color and sizes for Melange defaults
+ * Also some settings such as `$support-for-ie8` etc. are used in Caffeine mixins
+ * You are free to extend the settings for system wide use.
+ */
+@import "settings/settings";
+
+@import "gui/gui";

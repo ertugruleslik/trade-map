@@ -1,0 +1,12 @@
+[
+  "./node_modules/angular/angular.js",
+  "./node_modules/angular-ui-router/release/angular-ui-router.js",
+  "./node_modules/angularjs-social-login/angularjs-social-login.js",
+  "./node_modules/angular-collection-assistant/ng-collection-assistant.js",
+  "./node_modules/lodash/lodash.min.js",
+  "./node_modules/moment/min/moment.min.js",
+  "./node_modules/snapsvg/dist/snap.svg-min.js",
+  "./node_modules/angular-right-click/src/ng-right-click.js",
+  "./src/app.module.js",
+  "./src/**/*.js"
+]

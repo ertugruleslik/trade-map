@@ -1,0 +1,65 @@
+
+@mixin flex($value...) {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+
+  @include prefixer(flex, $value, webkit ms);
+}
+
+@mixin flex-direction($content) {
+  @include prefixer(flex-direction, $content, webkit ms);
+}
+
+@mixin flex-wrap($content) {
+  @include prefixer(flex-wrap, $content, webkit ms);
+}
+
+@mixin align-content($value) {
+  @include prefixer(align-content, $value, webkit);
+}
+
+@mixin align-items($value) {
+  $box: $value;
+  $ms: $value;
+  @if ($value == "flex-start") {
+    $box: "start";
+    $ms: "start";
+  }
+
+  @if ($value == "flex-end") {
+    $box: "end";
+    $ms: "end";
+  }
+
+  -ms-flex-align: #{$ms};
+  -webkit-box-align: #{$box};
+  @include prefixer(align-items, $value, webkit);
+}
+
+@mixin justify-content($value) {
+  $box: $value;
+  $ms: $value;
+  @if ($value == "flex-start") {
+    $box: "start";
+    $ms: "start";
+  }
+
+  @if ($value == "flex-end") {
+    $box: "end";
+    $ms: "end";
+  }
+
+  @if ($value == "space-between" or $value == "space-around") {
+    $box: "justify";
+    $ms: "justify";
+  }
+  -ms-flex-pack: #{$ms};
+  -webkit-box-pack: #{$box};
+  @include prefixer(justify-content, $value, webkit);
+}
+
+@mixin _order($value) {
+  @include prefixer(order, $value, webkit ms);
+}

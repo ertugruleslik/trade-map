@@ -1,0 +1,31 @@
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: 49%;
+    padding: 5px 20px 10px;
+    border-bottom: 1px solid #f6f6f6;
+    box-sizing: border-box;
+
+    @media screen and (max-width : 768px) {
+      width: 100%;
+    }
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    height: 35px;
+
+    h3 {
+      font-size: 18px;
+      color: #3e3e3e;
+      font-weight: 500;
+    }
+
+    .flag {
+      margin-left: 15px;
+    }
+  }
+}

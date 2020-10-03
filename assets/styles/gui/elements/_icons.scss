@@ -1,0 +1,131 @@
+
+%icon-cloudy {
+    content: "\EA01";
+}
+
+.icon-cloudy {
+    &::before {
+        @extend %icon-cloudy;
+    }
+}
+
+
+%icon-foggy {
+    content: "\EA02";
+}
+
+.icon-foggy {
+    &::before {
+        @extend %icon-foggy;
+    }
+}
+
+
+%icon-light_snowy {
+    content: "\EA03";
+}
+
+.icon-light_snowy {
+    &::before {
+        @extend %icon-light_snowy;
+    }
+}
+
+
+%icon-night-clear {
+    content: "\EA04";
+}
+
+.icon-night-clear {
+    &::before {
+        @extend %icon-night-clear;
+    }
+}
+
+
+%icon-night {
+    content: "\EA05";
+}
+
+.icon-night {
+    &::before {
+        @extend %icon-night;
+    }
+}
+
+
+%icon-partly-cloudy {
+    content: "\EA06";
+}
+
+.icon-partly-cloudy {
+    &::before {
+        @extend %icon-partly-cloudy;
+    }
+}
+
+
+%icon-rainy {
+    content: "\EA07";
+}
+
+.icon-rainy {
+    &::before {
+        @extend %icon-rainy;
+    }
+}
+
+
+%icon-snowy {
+    content: "\EA08";
+}
+
+.icon-snowy {
+    &::before {
+        @extend %icon-snowy;
+    }
+}
+
+
+%icon-sunny {
+    content: "\EA09";
+}
+
+.icon-sunny {
+    &::before {
+        @extend %icon-sunny;
+    }
+}
+
+
+%icon-thunderstorm {
+    content: "\EA0A";
+}
+
+.icon-thunderstorm {
+    &::before {
+        @extend %icon-thunderstorm;
+    }
+}
+
+
+%icon-thundery-showers {
+    content: "\EA0B";
+}
+
+.icon-thundery-showers {
+    &::before {
+        @extend %icon-thundery-showers;
+    }
+}
+
+
+%icon-windy {
+    content: "\EA0C";
+}
+
+.icon-windy {
+    &::before {
+        @extend %icon-windy;
+    }
+}

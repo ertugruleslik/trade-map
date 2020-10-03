@@ -1,0 +1,56 @@
+header {
+  @include flex;
+  @include justify-content(space-between);
+  @include align-items(center);
+  height: 60px;
+  padding: 0 30px;
+  background: #f1f1f1;
+  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+
+  @media screen and (max-width : 768px) {
+    flex-wrap: wrap;
+    height: 100px;
+  }
+}
+
+.header {
+
+  &-profile {
+    font-weight: 600;
+    @include font-size(18px);
+  }
+
+  &-search {
+    position: relative;
+    width: 300px;
+    z-index: 2;
+
+    @media screen and (max-width : 768px) {
+      width: 100%;
+      order: 1;
+    }
+
+    &-box {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    &-result {
+      position: absolute;
+      width: 100%;
+      max-height: 500px;
+      background: #fff;
+      overflow: auto;
+      box-shadow: 0 3px 5px rgba(0,0,0,.4);
+
+      li {
+        padding: 7px 20px;
+        border-bottom: 1px solid #f6f6f6;
+
+        &:last-child {
+          border: 0;
+        }
+      }
+    }
+  }
+}

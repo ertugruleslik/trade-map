@@ -1,0 +1,28 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f5f5f5;
+    color: #454545;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    }
+
+    &.primary {
+        background: #30bbbb;
+        color: #fff;
+    }
+
+    &.facebook {
+        background: #1389e0;
+        color: #fff;
+        border: 0;
+    }
+}
+
+.back {
+    margin: 20px 0 -15px 20px;
+}

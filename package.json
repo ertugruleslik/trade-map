@@ -1,0 +1,34 @@
+{
+  "name": "angularjs-starter-kit",
+  "version": "1.0.0",
+  "description": "A minimalist AngularJS starter project",
+  "main": "index.js",
+  "repository": "https://github.com/lackovic/angularjs-starter-kit",
+  "author": "Marco Lackovic <marco.lackovic@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-collection-assistant": "^1.1.4",
+    "angular-right-click": "^0.1.1",
+    "angular-ui-router": "^1.0.22",
+    "angularjs-social-login": "^2.6.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.0",
+    "snapsvg": "^0.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.0",
+    "browser-sync": "^2.24.5",
+    "cssnano": "^4.1.10",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "run-sequence": "^2.2.1"
+  }
+}
